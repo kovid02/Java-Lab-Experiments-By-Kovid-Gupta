@@ -1,0 +1,6 @@
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<c:set var="ctx" value="${pageContext.request.contextPath}" />
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#2563eb"><title><c:out value="${pageTitle}" default="Dream Facilities"/> | Dream Facilities</title><link rel="stylesheet" href="${ctx}/assets/css/style.css"><script defer src="${ctx}/assets/js/app.js"></script></head><body>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<header class="site-header"><a class="brand" href="${ctx}/"><span class="brand-mark">D</span><span>Dream <span class="brand-light">Facilities</span><small>STUDENT FEEDBACK</small></span></a><nav class="nav-links"><a href="${ctx}/" class="nav-link">Home</a><a href="${ctx}/feedback" class="nav-link">Submit Feedback</a><a href="${ctx}/feedbacks" class="nav-link">Explore Feedback</a><a href="${ctx}/admin/login" class="nav-link admin-link">Admin</a></nav><button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode"><span class="theme-icon">☾</span></button><button class="mobile-menu" aria-label="Toggle navigation" type="button">☰</button></header>
+<main class="page-shell">

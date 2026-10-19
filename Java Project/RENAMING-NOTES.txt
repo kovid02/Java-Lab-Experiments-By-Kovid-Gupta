@@ -1,0 +1,12 @@
+Dream Facilities project rename
+
+The project folder, Maven artifact, WAR name, Java package, database name, SQL filename, and environment variable names use DreamFacilities / dream_facilities branding.
+
+Build from this folder (the one containing pom.xml):
+  mvn clean package
+
+WAR output: target\DreamFacilities.war
+Tomcat URL: http://localhost:8080/DreamFacilities/
+SQL setup file: database\dream_facilities.sql
+
+Demo admin credentials are documented in README.md. Change the demo password before real deployment.

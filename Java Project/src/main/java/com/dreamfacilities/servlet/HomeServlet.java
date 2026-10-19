@@ -1,0 +1,3 @@
+package com.dreamfacilities.servlet;
+import com.dreamfacilities.dao.FeedbackDAO; import jakarta.servlet.*; import jakarta.servlet.annotation.WebServlet; import jakarta.servlet.http.*; import java.io.IOException;
+@WebServlet("") public class HomeServlet extends HttpServlet { protected void doGet(HttpServletRequest req,HttpServletResponse res)throws ServletException,IOException {try{FeedbackDAO d=new FeedbackDAO();req.setAttribute("total",d.count());req.setAttribute("average",String.format(java.util.Locale.US,"%.1f",d.average()));}catch(Exception e){req.setAttribute("total",0);req.setAttribute("average","0.0");req.setAttribute("dbError",true);}req.getRequestDispatcher("/WEB-INF/views/home.jsp").forward(req,res);} }
